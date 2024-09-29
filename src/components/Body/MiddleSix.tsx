@@ -29,8 +29,8 @@ const MiddleSix: React.FC = () => {
 
   return (
     <div ref={sectionRef} className="relative bg-cover bg-center h-screen" style={{ backgroundImage: `url(${cover})` }}>
-      <div className="absolute inset-0 bg-gray-900 bg-opacity-50"></div>
-      <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
+      <div className="absolute inset-0 bg-gray-900 bg-opacity-50 "></div>
+      <div className="relative z-10 flex flex-col justify-center  items-center text-center text-white pt-16">
         <h2 className={`text-lg font-bold transition-all duration-1000 ease-out ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-10'
         }`}>Contact Us</h2>
@@ -44,24 +44,24 @@ const MiddleSix: React.FC = () => {
             <input
               type="text"
               placeholder="Full Name"
-              className="w-1/2 p-4 rounded bg-gray-200 text-gray-800 focus:outline-none"
+              className="w-1/2 p-4 rounded bg-white text-gray-800 focus:outline-none"
             />
             <input
               type="email"
               placeholder="example@gmail.com"
-              className="w-1/2 p-4 rounded bg-gray-200 text-gray-800 focus:outline-none"
+              className="w-1/2 p-4 rounded bg-white text-gray-800 focus:outline-none"
             />
           </div>
           <div className="flex space-x-4 mt-4">
           <input
               type="text"
               placeholder="Company Name"
-              className="w-full p-4 rounded bg-gray-200 text-gray-800 focus:outline-none"
+              className="w-full p-4 rounded bg-white text-gray-800 focus:outline-none"
             />
           </div>
           <textarea
             placeholder="Message"
-            className="w-full p-4 mt-4 rounded bg-gray-200 text-gray-800 focus:outline-none"
+            className="w-full p-4 mt-4 rounded bg-white text-gray-800 focus:outline-none"
             rows={4}
           ></textarea>
           <button
